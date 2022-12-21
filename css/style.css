@@ -65,6 +65,11 @@ button.start a{
     color: white;
 }
 
+.main-container{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
 
 /********************************
 MAIN
@@ -124,4 +129,42 @@ SECTION HEADER
     height: 100px;
     bottom: 100px;
     background-color: white;
+}
+
+/*******************
+BUSINESS PLAN
+*******************/
+
+
+.row-business > *{
+    padding: 25px 0;
+}
+
+.row-business{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 h2{
+    font-size: 40px;
+}
+
+input[type="radio"]{
+    border: 2px solid blue;
+    font-size: 20px;
+}
+
+.row-business .col-4{
+    border: 2px solid gray;
+}
+
+.row-business div.type{
+    text-align: center;
+    border-bottom: 2px solid gray;
+}
+
+.type::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f007";
 }
