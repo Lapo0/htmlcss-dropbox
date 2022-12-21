@@ -8,12 +8,12 @@ img{
     max-width: 100%;
 }
 
-ul, li, a{
+header.header  ul, header.header li, a{
     list-style: none;
     text-decoration: none;
 }
 
-button{
+button.button{
     background-color: blue;
     border: 0;
     color: white;
@@ -134,13 +134,12 @@ SECTION HEADER
 /*******************
 BUSINESS PLAN
 *******************/
-
-
-.row-business > *{
-    padding: 25px 0;
+.main-container .row-business:nth-child(2){
+    margin: 0 -25px;
 }
 
 .row-business{
+    padding: 25px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -155,11 +154,17 @@ input[type="radio"]{
 }
 
 .row-business .col-4{
+    padding: 0 25px;
+}
+
+.row-business .col-4 .col-container{
     border: 2px solid gray;
+    padding: 0 30px;
 }
 
 .row-business div.type{
     text-align: center;
+    line-height: 40px;
     border-bottom: 2px solid gray;
 }
 
@@ -167,4 +172,75 @@ input[type="radio"]{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f007";
+}
+
+.choice-plan{
+    padding: 40px 25px;
+}
+
+.col-4 .col-container .cost{
+    padding: 40px 0;
+    margin: -10px 0;
+}
+
+.col-container .cost > *{
+    padding: 10px 0;
+}
+
+.cost p span{
+    display: inline-block;
+    margin: 10px 0;
+    color: gray;
+}
+
+.col-4 .col-container li{
+    padding: 12px 0;
+    list-style-type: none;
+    padding-left: 1.5em;
+}
+
+ul{
+    position: relative;
+}
+
+li i{
+    position: absolute;
+    left: 0;
+}
+
+.check-blue{
+    color: blue;
+}
+
+.col-container .button{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.button p{
+    padding-top: 35px;
+}
+
+.button p a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.col-container .button button.button{
+    font-size: 18px;
+}
+
+.col-4 .col-container hr{
+    border: 1px solid gray;
+    width: 50px;
+    margin-left: 30px;
+}
+
+.col-container .pro p{
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.col-container .pro{
+    padding: 40px 0;
 }
