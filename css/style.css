@@ -75,6 +75,7 @@ SECTION HEADER
 ********************/
 .main section.blue{
     background-color: rgb(131, 187, 255);
+    padding: 40px 0;
 }
 
 .container-header{
@@ -88,7 +89,7 @@ SECTION HEADER
 }
 
 .row-header:first-child{
-    padding: 100px 0 60px 0;
+    padding: 50px 0;
 }
 
 .col-12 h1{
@@ -106,9 +107,21 @@ SECTION HEADER
 }
 
 .row-header .col-4 > *{
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 .row-header .col-4{
-    margin: -20px 0;
+    margin: -25px 0;
+}
+
+.col-8 img{
+    position: relative;
+    z-index: 2;
+}
+
+.white{
+    position: relative;
+    height: 100px;
+    bottom: 100px;
+    background-color: white;
 }
