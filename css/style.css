@@ -37,6 +37,10 @@ button.button{
     width: calc((100% / 12)*7);
 }
 
+.col-6{
+    width: calc((100% / 12)*6);
+}
+
 .col-5{
     width: calc((100% / 12)*5);
 }
@@ -167,7 +171,7 @@ input[type="radio"]{
     font-size: 20px;
 }
 
-.row-business .col-4{
+.row-business > .col-4{
     padding: 0 25px;
 }
 
@@ -286,17 +290,14 @@ li i{
     margin-top: 54px;
 }
 
-.col-12 .col-container > *{
+.enterprise{
+    display: flex;
+    align-items: center;
     padding: 0 30px;
 }
 
-.enterprise{
-    display: flex;
-    align-items: flex-start;
-}
-
-.enterprise .button{
-    margin-top: 30px;
+.enterprise div.button{
+    padding-left: 80px;
 }
 
 .col-container .titol-enterprise > * {
@@ -304,7 +305,7 @@ li i{
 }
 
 .text-enterprise p{
-    padding: 30px 0;
+    padding: 30px;
 }
 
 /**********************************
@@ -391,4 +392,39 @@ SECTION DESIGNIT
     padding-top: 150px;
 }
 
-/
+.designit .container{
+    display: flex;
+}
+
+.col-4.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.designit .col-6{
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designit .col-6 img{
+    width: 150px;
+    filter: invert(1);
+}
+
+#green{
+    background-color: green;
+}
+
+#violet{
+    background-color: violet;
+}
+
+#celest{
+    background-color: rgb(21, 150, 186);
+}
+
+#red{
+    background-color: red;
+}
