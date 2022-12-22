@@ -389,7 +389,8 @@ SECTION OUR CLIENTS
 SECTION DESIGNIT
 ********************************/
 .designit{
-    padding-top: 150px;
+    margin-top: 150px;
+    background-color: rgb(182, 219, 225);
 }
 
 .designit .container{
@@ -413,18 +414,57 @@ SECTION DESIGNIT
     filter: invert(1);
 }
 
+.designit .col-4.big{
+    padding: 50px;
+    background-color: beige;
+}
+
+.designit hr{
+    width: 100px;
+    border: 1px solid rgb(217, 217, 217);
+    margin: 45px 0;
+}
+
+.designit .col-4 > p{
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
 #green{
     background-color: green;
 }
-
 #violet{
     background-color: violet;
 }
-
 #celest{
     background-color: rgb(21, 150, 186);
 }
-
 #red{
     background-color: red;
+}
+#aqua{
+    background-color: aqua;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+
+.designit .main-container{
+    display: flex;
+    padding: 140px 0;
+}
+
+.designit h2{
+    padding-right: 100px;
+    color: rgb(125, 0, 0);
+}
+
+.designit .designit-button button{
+    width: 300px;
+    border: none;
+    line-height: 50px;
+    font-size: 18px;
 }
