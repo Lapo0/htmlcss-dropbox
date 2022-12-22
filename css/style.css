@@ -455,6 +455,7 @@ SECTION DESIGNIT
 
 .designit .small-container{
     padding: 140px 0;
+    display: flex;
 }
 
 .designit h2{
