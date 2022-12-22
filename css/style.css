@@ -49,7 +49,7 @@ button.button{
     width: calc((100% / 12)*2);
 }
 
-.main-container{
+.small-container{
     max-width: 1050px;
     margin: 0 auto;
 }
@@ -58,8 +58,11 @@ button.button{
     line-height: 40px;
 }
 
+.small-container .col-12{
+    padding: 0 25px;
+}
 
-.main-container h2{
+.small-container h2{
     font-size: 40px;
 }
 /*********************************
@@ -210,10 +213,6 @@ input[type="radio"]{
 
 .choice-plan{
     padding: 40px 0;
-}
-
-.main-container .col-12{
-    padding: 0 25px;
 }
 
 .col-4 .col-container .cost, .titol-enterprise{
@@ -452,8 +451,7 @@ SECTION DESIGNIT
     background-color: yellow;
 }
 
-.designit .main-container{
-    display: flex;
+.designit .small-container{
     padding: 140px 0;
 }
 
