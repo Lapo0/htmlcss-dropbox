@@ -468,3 +468,31 @@ SECTION DESIGNIT
     line-height: 50px;
     font-size: 18px;
 }
+
+/*************************************
+SECTION FAQ
+*************************************/
+.section-faq{
+    margin: 150px 0;
+}
+
+.section-faq h2{
+    padding-bottom: 70px;
+}
+
+.row-faq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    font-weight: bold;
+    border-top: 1px solid rgb(217, 217, 217);
+}
+
+.row-faq:last-child{
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.row-faq .angle-down-arrow{
+    margin-right: 50px;
+}
