@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 img{
@@ -32,6 +33,31 @@ button.button{
     width: calc((100% / 12)*8);
 }
 
+.col-7{
+    width: calc((100% / 12)*7);
+}
+
+.col-5{
+    width: calc((100% / 12)*5);
+}
+
+.col-2{
+    width: calc((100% / 12)*2);
+}
+
+.main-container{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.button button.button{
+    line-height: 40px;
+}
+
+
+.main-container h2{
+    font-size: 40px;
+}
 /*********************************
 HEADER
 *********************************/
@@ -61,13 +87,8 @@ HEADER
     align-items: center;
 }
 
-button.start a{
+button.button a{
     color: white;
-}
-
-.main-container{
-    max-width: 1050px;
-    margin: 0 auto;
 }
 
 
@@ -101,9 +122,8 @@ SECTION HEADER
     font-size: 90px;
 }
 
-.col-4 button.button{
-    padding: 0 15px;
-    line-height: 40px;
+.row-header .button button.button{
+    width: 250px;
 }
 
 .container-header .icon{
@@ -112,11 +132,11 @@ SECTION HEADER
 }
 
 .row-header .col-4 > *{
-    padding: 25px 0;
+    padding: 20px 0;
 }
 
 .row-header .col-4{
-    margin: -25px 0;
+    margin: -20px 0;
 }
 
 .col-8 img{
@@ -134,19 +154,13 @@ SECTION HEADER
 /*******************
 BUSINESS PLAN
 *******************/
-.main-container .row-business:nth-child(2){
-    margin: 0 -25px;
-}
-
 .row-business{
     padding: 25px 0;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -25px;
 }
 
-.col-12 h2{
-    font-size: 40px;
-}
 
 input[type="radio"]{
     border: 2px solid blue;
@@ -158,29 +172,48 @@ input[type="radio"]{
 }
 
 .row-business .col-4 .col-container{
-    border: 2px solid gray;
+    border: 2px solid rgb(217, 217, 217);
+    height: 100%;
+}
+
+.col-4 .col-container > *{
     padding: 0 30px;
 }
 
 .row-business div.type{
     text-align: center;
     line-height: 40px;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgb(217, 217, 217);
 }
 
-.type::before{
+.type.user::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f007";
 }
 
-.choice-plan{
-    padding: 40px 25px;
+.type.team::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0c0";
 }
 
-.col-4 .col-container .cost{
+.type.bulding::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f1ad";
+}
+
+.choice-plan{
     padding: 40px 0;
-    margin: -10px 0;
+}
+
+.main-container .col-12{
+    padding: 0 25px;
+}
+
+.col-4 .col-container .cost, .titol-enterprise{
+    margin: 30px 0;
 }
 
 .col-container .cost > *{
@@ -212,13 +245,13 @@ li i{
     color: blue;
 }
 
-.col-container .button{
+.col-4 .col-container .button{
     width: 100%;
-    padding: 40px 0;
+    margin-top: 50px;
 }
 
 .button p{
-    padding-top: 35px;
+    padding: 35px 0;
 }
 
 .button p a{
@@ -228,10 +261,12 @@ li i{
 
 .col-container .button button.button{
     font-size: 18px;
+    margin: 0;
+    width: 100%;
 }
 
 .col-4 .col-container hr{
-    border: 1px solid gray;
+    border: 1px solid rgb(217, 217, 217);
     width: 50px;
     margin-left: 30px;
 }
@@ -242,5 +277,118 @@ li i{
 }
 
 .col-container .pro{
-    padding: 40px 0;
+    margin: 40px 0;
 }
+
+
+.col-12 .col-container{
+    border: 2px solid rgb(217, 217, 217);
+    margin-top: 54px;
+}
+
+.col-12 .col-container > *{
+    padding: 0 30px;
+}
+
+.enterprise{
+    display: flex;
+    align-items: flex-start;
+}
+
+.enterprise .button{
+    margin-top: 30px;
+}
+
+.col-container .titol-enterprise > * {
+    padding: 10px 0;
+}
+
+.text-enterprise p{
+    padding: 30px 0;
+}
+
+/**********************************
+SECTION PARTNER
+*********************************/
+
+.section-partner{
+    padding: 150px 0;
+}
+
+.partner-row{
+    display: flex;
+}
+
+.partner-text{
+    padding: 55px;
+}
+
+.partner-text > *{
+    padding: 13px 0;
+}
+
+.partner-text h3{
+    font-size: 24px;
+}
+
+.partner-text p{
+    font-size: 18px;
+}
+
+.partner-text .partner-button button{
+    background-color: white;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+
+/***********************************************
+SECTION OPERATION
+***********************************************/
+.section-operation .row-operation{
+    margin: 0 -25px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+}
+
+.row-operation .col-4{
+    padding: 0 25px;
+}
+
+.row-operation h2{
+    padding-bottom: 80px;
+}
+.row-operation h3{
+    font-size: 28px;
+    padding-bottom: 40px;
+}
+.row-operation p{
+    font-size: 18px;
+}
+
+/********************************
+SECTION OUR CLIENTS
+**********************************/
+
+.our-client{
+    margin-top: 200px;
+}
+
+.our-client h2{
+    padding-bottom: 70px;
+}
+
+.our-client a{
+    text-decoration: underline;
+}
+
+/********************************
+SECTION DESIGNIT
+********************************/
+.designit{
+    padding-top: 150px;
+}
+
+/
