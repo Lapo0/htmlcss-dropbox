@@ -8,8 +8,7 @@
 img{
     max-width: 100%;
 }
-
-header.header  ul, header.header li, a{
+  ul,  li, a{
     list-style: none;
     text-decoration: none;
 }
@@ -56,6 +55,11 @@ button.button{
 
 .button button.button{
     line-height: 40px;
+}
+
+.container-header, .container-footer{
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .small-container .col-12{
@@ -111,10 +115,6 @@ SECTION HEADER
     padding: 40px 0;
 }
 
-.container-header{
-    max-width: 1250px;
-    margin: 0 auto;
-}
 
 .row-header{
     display: flex;
@@ -158,9 +158,9 @@ SECTION HEADER
     background-color: white;
 }
 
-/*******************
+/*******************************************
 BUSINESS PLAN
-*******************/
+**********************************************/
 .row-business{
     padding: 25px 0;
     display: flex;
@@ -198,6 +198,8 @@ input[type="radio"]{
     font-weight: 900;
     content: "\f007";
 }
+
+
 
 .type.team::before{
     font-family: "Font Awesome 6 Free";
@@ -493,4 +495,62 @@ SECTION FAQ
 
 .row-faq .angle-down-arrow{
     margin-right: 50px;
+}
+
+/***********************************************
+FOOTER
+**********************************************/
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.container-footer{
+    padding-top: 100px;
+}
+
+.row-footer{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer .col-5{
+    margin-bottom: 60px;
+}
+
+.container-footer h3{
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+.container-footer li{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.container-footer hr{
+    border: 1px solid white;
+    width: 125px;
+}
+
+.item-world{
+    color: white;
+}
+
+.container-footer .language select{
+    padding: 60px 0;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select::after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f1ad";
 }
