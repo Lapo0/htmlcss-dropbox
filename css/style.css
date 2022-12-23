@@ -233,17 +233,14 @@ input[type="radio"]{
 
 .col-4 .col-container li{
     padding: 12px 0;
-    list-style-type: none;
-    padding-left: 1.5em;
 }
 
-ul{
-    position: relative;
+.row-business .col-container li{
+    display: flex;
 }
 
-li i{
-    position: absolute;
-    left: 0;
+.row-business .col-container li i{
+    padding-right: 10px;
 }
 
 .check-blue{
